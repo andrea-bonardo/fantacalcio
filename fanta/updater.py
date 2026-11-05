@@ -74,8 +74,11 @@ def http_get(url: str, timeout: int = 45) -> str:
             "Accept-Language": "it-IT,it;q=0.9,en;q=0.5",
         },
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        raw = response.read()
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            raw = response.read()
+    except OSError as exc:
+        raise OSError(f"{url}: {exc}") from exc
     return raw.decode("utf-8", "replace")
 
 

@@ -17,6 +17,8 @@ import json
 import unicodedata
 from pathlib import Path
 from typing import Any, Iterable
+import sys
+import time 
 
 from .config import (
     CODE_TO_NAME,
@@ -498,10 +500,36 @@ def missing_data_files(data_dir: Path | str | None = None) -> list[Path]:
     ]
 
 
-def ensure_data(data_dir: Path | str | None = None, *, auto_update: bool = True) -> Path:
+MAX_DATA_AGE_HOURS = 3
+
+
+def data_age_hours(data_dir: Path | str | None = None) -> float | None:
+    """Ore trascorse dall'ultimo aggiornamento dei dati (None se il file non esiste)."""
+    path = resolve_data_dir(data_dir) / PLAYERS_FILE
+    try:
+        return (time.time() - path.stat().st_mtime) / 3600
+    except OSError:
+        return None
+
+
+def ensure_data(
+    data_dir: Path | str | None = None,
+    *,
+    auto_update: bool = True,
+    max_age_hours: float = MAX_DATA_AGE_HOURS,
+) -> Path:
     directory = resolve_data_dir(data_dir)
     missing = missing_data_files(directory)
     if not missing:
+        age = data_age_hours(directory)
+        if auto_update and max_age_hours and age is not None and age >= max_age_hours:
+            print(f"Dati vecchi di {age:.0f} ore: li aggiorno...")
+            from .updater import update_data
+
+            try:
+                update_data(directory, verbose=False)
+            except Exception as exc:  # noqa: BLE001 - si continua con i dati vecchi
+                print(f"Aggiornamento non riuscito ({exc}): uso i dati precedenti.", file=sys.stderr)
         return directory
     if not auto_update:
         names = ", ".join(path.name for path in missing)
@@ -513,7 +541,6 @@ def ensure_data(data_dir: Path | str | None = None, *, auto_update: bool = True)
 
     update_data(directory, verbose=True)
     return directory
-
 
 # ---------------------------------------------------------------------------
 # Serializzazione per l'output JSON
