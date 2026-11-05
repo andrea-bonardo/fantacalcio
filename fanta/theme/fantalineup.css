@@ -1,0 +1,761 @@
+/* ==========================================================================
+   FantaLineup 26/27 - tema "Night Pitch"
+   ==========================================================================
+
+   Questo file ha DUE livelli di lettura:
+
+   1) PARTE COMUNE (da :root fino al divisore "SOLO WEB")
+      Sintassi volutamente semplice: selettori piatti (nessun annidamento,
+      nessun combinatore), valori esadecimali, dimensioni in px, nessun
+      gradiente. Un piccolo loader Python (stdlib) la legge e la applica a
+      ttk.Style, ai widget tk e al Canvas del campo.
+      Proprieta' lette: color, background, border-color, border-width,
+      font-family, font-size, font-weight, padding, height, width.
+
+   2) PARTE "SOLO WEB" (dopo il divisore)
+      Effetti che tkinter non sa disegnare: gradienti, ombre, bordi
+      arrotondati, transizioni, blur, responsive. Il loader tkinter la
+      ignora; serve se un giorno l'interfaccia diventa HTML/webview.
+
+   Regola d'oro: i COLORI si cambiano SOLO nei token di :root.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   TOKEN
+   ========================================================================== */
+
+:root {
+  /* Superfici (dal piu' scuro al piu' chiaro) */
+  --bg:            #06121b;
+  --bg-elevated:   #0a1b27;
+  --surface:       #0d2230;
+  --surface-2:     #12303f;
+  --surface-hover: #173b4d;
+  --border:        #1b4152;
+  --border-strong: #26596f;
+
+  /* Testo */
+  --text:          #eaf6fb;
+  --text-muted:    #8fb0c0;
+  --text-faint:    #5c7d8d;
+  --text-on-accent:#03201c;
+
+  /* Accento (turchese del riferimento) */
+  --accent:        #19e3c4;
+  --accent-hover:  #4af0d6;
+  --accent-soft:   #0f4a49;
+  --accent-2:      #22b8f0;
+
+  /* Stati */
+  --good:          #2ee59d;
+  --good-bg:       #0e3a2e;
+  --bad:           #ff5a76;
+  --bad-bg:        #45151f;
+  --warn:          #f5b82e;
+  --warn-bg:       #3d3010;
+  --info:          #5aa9ff;
+
+  /* Campo da calcio (Canvas) */
+  --grass-a:       #1f7a4a;
+  --grass-b:       #1a6a41;
+  --pitch-line:    #d8f5e4;
+  --pitch-shadow:  #0a2c1c;
+
+  /* Segnali giocatore */
+  --captain:       #ffd60a;
+  --captain-text:  #3b2d00;
+  --ring-doubt:    #ff9f0a;
+  --ring-out:      #ff453a;
+  --ring-selected: #19e3c4;
+  --ring-swap:     #ffffff;
+  --ring-default:  #ffffff;
+
+  /* Esito atteso partita: V = vittoria, S = sconfitta, E = equilibrata */
+  --verdict-v:     #2fbf80;
+  --verdict-s:     #e5505f;
+  --verdict-e:     #7a8b96;
+
+  /* Difficolta' avversario: scala a 3 punti (1 facile, 3 media, 5 difficile) */
+  --diff-1:        #2e9e4f;
+  --diff-3:        #e0b020;
+  --diff-5:        #d2453b;
+
+  /* Tipografia (il loader usa il primo font installato) */
+  --font-ui:       "Segoe UI Variable", "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-size-xs:  8px;
+  --font-size-sm:  9px;
+  --font-size-md:  10px;
+  --font-size-lg:  12px;
+  --font-size-xl:  22px;
+
+  /* Spaziature */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 22px;
+
+  /* Metriche widget */
+  --row-height: 32px;
+  --radius: 10px;          /* solo web */
+}
+
+
+/* ==========================================================================
+   FINESTRA E STRUTTURA
+   ========================================================================== */
+
+.app {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-md);
+}
+
+.header {
+  background: var(--bg);
+  padding: 16px 22px 10px 22px;
+}
+
+.brand {
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+.brand-accent {
+  background: var(--bg);
+  color: var(--accent);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+.subtitle {
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.toolbar {
+  background: var(--surface);
+  border-color: var(--border);
+  border-width: 1px;
+  padding: 12px 16px;
+}
+
+.card {
+  background: var(--surface);
+  border-color: var(--border);
+  border-width: 1px;
+}
+
+.card-inner {
+  background: var(--bg-elevated);
+  border-color: var(--border);
+  border-width: 1px;
+}
+
+.divider {
+  background: var(--border);
+  height: 1px;
+}
+
+.section-label {
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+}
+
+.section-label-page {
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+}
+
+.field-label {
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+}
+
+.summary {
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  padding: 2px 2px 2px 2px;
+}
+
+.summary-highlight {
+  background: var(--bg);
+  color: var(--accent);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+.status {
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  padding: 7px 22px 7px 22px;
+}
+
+.warning {
+  background: var(--warn-bg);
+  color: var(--warn);
+  font-size: var(--font-size-sm);
+  padding: 6px 22px 6px 22px;
+}
+
+
+/* ==========================================================================
+   CONTROLLI
+   ========================================================================== */
+
+.button {
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: var(--font-size-sm);
+  padding: 8px 12px 8px 12px;
+}
+.button:hover    { background: var(--surface-hover); }
+.button:disabled { background: var(--bg-elevated); color: var(--text-faint); }
+
+.button-primary {
+  background: var(--accent);
+  color: var(--text-on-accent);
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  padding: 9px 16px 9px 16px;
+}
+.button-primary:hover    { background: var(--accent-hover); }
+.button-primary:disabled { background: var(--accent-soft); color: var(--text-faint); }
+
+.button-swap {
+  background: var(--accent);
+  color: var(--text-on-accent);
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  padding: 10px 14px 10px 14px;
+}
+.button-swap:hover    { background: var(--accent-hover); }
+.button-swap:disabled { background: var(--surface-2); color: var(--text-faint); }
+
+.button-ghost {
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  padding: 10px 13px 10px 13px;
+}
+.button-ghost:hover    { background: var(--surface-hover); color: var(--text); }
+.button-ghost:disabled { background: var(--bg-elevated); color: var(--text-faint); }
+
+.combobox {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: var(--border-strong);
+  padding: 7px 8px 7px 8px;
+}
+.combobox:focus    { border-color: var(--accent); }
+.combobox:disabled { background: var(--bg); color: var(--text-faint); }
+.combobox-list {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.spinbox {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: var(--border-strong);
+  padding: 6px 6px 6px 6px;
+}
+
+.scrollbar {
+  background: var(--surface-2);
+  border-color: var(--surface);
+  color: var(--text-muted);
+}
+
+
+/* ==========================================================================
+   SCHEDE LATERALI (Analisi / Panchina & cambi / Calendario)
+   ========================================================================== */
+
+.tabs {
+  background: var(--bg);
+}
+
+.tab {
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: normal;
+  padding: 10px 5px 10px 5px;
+}
+.tab:hover { color: var(--text); }
+
+.tab.is-active {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.tab-line            { background: var(--bg); height: 2px; }
+.tab-line.is-active  { background: var(--accent); }
+
+.tab-page {
+  background: var(--surface);
+  padding: 12px 12px 12px 12px;
+}
+
+
+/* ==========================================================================
+   TABELLE (Treeview): moduli, panchina, calendario
+   ========================================================================== */
+
+.tree {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--surface);
+  font-size: var(--font-size-sm);
+  height: var(--row-height);
+}
+
+.tree-heading {
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+  padding: 8px 7px 8px 7px;
+}
+.tree-heading:hover { background: var(--surface-2); }
+
+.tree-row:selected {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* tag delle righe (corrispondono ai tag di gui.py) */
+.row-up   { background: var(--good-bg); color: var(--good); }
+.row-down { background: var(--bad-bg);  color: var(--bad); }
+.row-mine { background: var(--warn-bg); color: var(--warn); }
+
+
+/* ==========================================================================
+   TESTO RICCO (pannelli Giocatore e Difesa & confronto)
+   ========================================================================== */
+
+.text-box {
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--font-size-sm);
+  padding: 2px 2px 2px 2px;
+}
+.text-box-select { background: var(--accent-soft); }
+
+.detail-title {
+  color: var(--text);
+  font-size: var(--font-size-md);
+  font-weight: bold;
+}
+
+.compare-head { color: var(--text);       font-size: var(--font-size-sm); font-weight: bold; }
+.compare-good { color: var(--good);       font-size: var(--font-size-sm); font-weight: bold; }
+.compare-bad  { color: var(--bad);        font-size: var(--font-size-sm); font-weight: bold; }
+.compare-flat { color: var(--text-muted); }
+.compare-hint { color: var(--text-muted); }
+
+
+/* ==========================================================================
+   CAMPO DA CALCIO (Canvas) - usato da PitchCanvas
+   ========================================================================== */
+
+.pitch {
+  background: var(--bg);              /* sfondo dietro al prato */
+  border-color: var(--border);
+}
+
+.pitch-grass-a { background: var(--grass-a); }
+.pitch-grass-b { background: var(--grass-b); }
+.pitch-line    { border-color: var(--pitch-line); border-width: 2px; }
+.pitch-shadow  { background: var(--pitch-shadow); }
+.pitch-empty   { color: var(--pitch-line); font-size: 14px; }
+
+.pitch-legend  { color: var(--text-muted); font-size: var(--font-size-xs); }
+
+/* gettone giocatore */
+.player-name      { color: #ffffff;  font-size: var(--font-size-md); font-weight: bold; }
+.player-opponent  { color: #cdeedb;  font-size: var(--font-size-md); font-weight: normal; }
+
+.player-ring            { border-color: var(--ring-default);  border-width: 2px; }
+.player-ring.is-doubt   { border-color: var(--ring-doubt);    border-width: 4px; }
+.player-ring.is-out     { border-color: var(--ring-out);      border-width: 4px; }
+.player-ring.is-selected{ border-color: var(--ring-selected); border-width: 3px; }
+.player-ring.is-swap    { border-color: var(--ring-swap);     border-width: 2px; }
+
+/* badge */
+.badge-role     { background: #0b2b1d;          color: #ffffff; font-size: 8px; font-weight: bold; }
+.badge-captain  { background: var(--captain);   color: var(--captain-text); font-size: 8px; font-weight: bold; }
+.badge-verdict-v{ background: var(--verdict-v); color: #ffffff; font-size: 8px; font-weight: bold; }
+.badge-verdict-s{ background: var(--verdict-s); color: #ffffff; font-size: 8px; font-weight: bold; }
+.badge-verdict-e{ background: var(--verdict-e); color: #ffffff; font-size: 8px; font-weight: bold; }
+
+/* etichette di variazione dopo un cambio (freccia + delta) */
+.delta-chip         { background: #ffffff; color: var(--text-muted); font-size: 8px; font-weight: bold; border-color: var(--text-muted); }
+.delta-chip.is-good { color: #14733f; border-color: #14733f; }
+.delta-chip.is-bad  { color: #c62828; border-color: #c62828; }
+
+
+/* ==========================================================================
+   ===== @web-only =====
+   Da qui in poi: solo per una futura versione HTML/webview.
+   Il loader tkinter si ferma a questo marcatore.
+   ========================================================================== */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, #0d3a4a 0%, transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, #08332f 0%, transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app { display: grid; gap: var(--space-4); padding: var(--space-5); max-width: 1500px; margin: 0 auto; }
+
+.header { display: flex; align-items: baseline; gap: var(--space-3); padding: 0; }
+.brand  { letter-spacing: -0.02em; margin: 0; }
+.subtitle { letter-spacing: 0.04em; text-transform: uppercase; }
+
+.toolbar, .card, .card-inner {
+  border-style: solid;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+.card { backdrop-filter: blur(10px); background: rgba(13, 34, 48, 0.85); }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+
+.section-label, .section-label-page, .field-label { letter-spacing: 0.12em; text-transform: uppercase; }
+
+.button, .button-primary, .button-swap, .button-ghost {
+  border: 0; border-radius: 8px; cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+.button:active, .button-primary:active, .button-swap:active { transform: translateY(1px); }
+.button-primary, .button-swap { box-shadow: 0 0 0 1px rgba(25, 227, 196, 0.5), 0 6px 18px rgba(25, 227, 196, 0.25); }
+.button:disabled, .button-primary:disabled, .button-swap:disabled, .button-ghost:disabled { cursor: not-allowed; box-shadow: none; }
+
+.combobox, .spinbox {
+  border-style: solid; border-width: 1px; border-radius: 8px; outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.combobox:focus, .spinbox:focus { box-shadow: 0 0 0 3px rgba(25, 227, 196, 0.25); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.tabs { display: flex; gap: var(--space-2); }
+.tab  { flex: 1; border: 0; border-radius: 8px 8px 0 0; cursor: pointer; transition: color 0.15s ease; }
+.tab-line { border-radius: 2px; transition: background 0.2s ease; }
+
+.tree-row { transition: background 0.12s ease; }
+.tree-row:hover { background: var(--surface-2); }
+
+.pitch {
+  border-style: solid; border-width: 1px; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+.pitch-grass-a { background: linear-gradient(180deg, #23864f 0%, var(--grass-a) 100%); }
+
+.player-token { transition: transform 0.15s ease, filter 0.15s ease; cursor: pointer; }
+.player-token:hover { transform: translateY(-3px) scale(1.04); filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5)); }
+.player-ring.is-selected { box-shadow: 0 0 0 4px rgba(25, 227, 196, 0.35), 0 0 24px rgba(25, 227, 196, 0.5); }
+.player-ring.is-doubt    { box-shadow: 0 0 14px rgba(255, 159, 10, 0.55); }
+.player-ring.is-out      { box-shadow: 0 0 14px rgba(255, 69, 58, 0.6); }
+.player-ring.is-swap     { border-style: dashed; }
+
+.warning { border: 1px solid var(--warn); border-radius: var(--radius); padding: var(--space-3) var(--space-4); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-soft); }
+
+@media (max-width: 1100px) {
+  .app { padding: var(--space-3); }
+  .layout { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+
+/* ==========================================================================
+   PAGINA WEB (classi w-*): layout, campo in prospettiva, card, schede
+   ========================================================================== */
+
+/* Stile web di FantaLineup. I colori vengono SOLO dai token di fantalineup.css (:root). */
+
+html, body { height: 100%; }
+body { margin: 0; font-size: 14px; line-height: 1.4; padding-bottom: 44px; }
+button, select, input { font: inherit; color: inherit; }
+
+.w-app { display: grid; gap: var(--space-4); padding: var(--space-4) var(--space-5); max-width: 1560px; margin: 0 auto; }
+
+/* intestazione e barra comandi */
+.w-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.w-brand { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+.w-brand span { color: var(--accent); }
+.w-brand small { color: var(--text-muted); font-weight: 500; font-size: 14px; margin-left: 4px; }
+
+.w-toolbar {
+  display: flex; flex-wrap: wrap; align-items: end; gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(13, 34, 48, 0.85); border: 1px solid var(--border); border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+}
+.w-field { display: grid; gap: 4px; font-size: 12px; color: var(--text-muted); }
+.w-field select, .w-field input {
+  min-width: 190px; padding: 9px 12px; background: var(--bg-elevated); color: var(--text);
+  border: 1px solid var(--border-strong); border-radius: 10px; outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.w-field-small input { min-width: 0; width: 84px; }
+.w-field select:focus, .w-field input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(25, 227, 196, .25); }
+
+.w-btn {
+  padding: 10px 20px; border: 0; border-radius: 10px; cursor: pointer; font-weight: 700;
+  background: var(--surface-2); color: var(--text);
+  transition: background .15s, transform .1s, box-shadow .15s;
+}
+.w-btn:hover:not(:disabled) { background: var(--surface-hover); }
+.w-btn:active:not(:disabled) { transform: translateY(1px); }
+.w-btn:disabled { color: var(--text-faint); background: var(--bg-elevated); cursor: not-allowed; }
+.w-btn-primary:not(:disabled) {
+  background: var(--accent); color: var(--text-on-accent);
+  box-shadow: 0 0 0 1px rgba(25, 227, 196, .5), 0 6px 18px rgba(25, 227, 196, .25);
+}
+.w-btn-primary:hover:not(:disabled) { background: var(--accent-hover); }
+.w-btn-ghost { background: transparent; border: 1px solid var(--border-strong); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* avviso */
+.w-warning {
+  white-space: pre-line; padding: var(--space-3) var(--space-4);
+  color: var(--warn); border: 1px solid var(--warn); border-radius: 14px; background: var(--warn-bg);
+}
+
+/* moduli */
+.w-formations { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: var(--space-2); }
+.w-chip {
+  display: grid; justify-items: center; gap: 2px; padding: 10px 6px; cursor: pointer;
+  background: rgba(13, 34, 48, .85); border: 1px solid var(--border); border-radius: 12px;
+  transition: border-color .15s, box-shadow .15s, background .15s;
+}
+.w-chip:hover { background: var(--surface-2); }
+.w-chip b { font-size: 17px; }
+.w-chip span { font-size: 12px; color: var(--text-muted); }
+.w-chip.is-active {
+  background: var(--accent-soft); border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(25, 227, 196, .25), 0 0 22px rgba(25, 227, 196, .25);
+}
+.w-chip.is-active span { color: var(--accent); }
+.w-chip i { font-style: normal; font-size: 11px; color: var(--warn); }
+
+/* struttura a due colonne */
+.w-layout { display: grid; grid-template-columns: minmax(0, 1fr) 430px; gap: var(--space-4); align-items: start; }
+.w-side { display: grid; gap: var(--space-3); }
+
+.w-card, .w-pitch-card {
+  background: rgba(13, 34, 48, 0.85); border: 1px solid var(--border); border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .35), inset 0 1px 0 rgba(255, 255, 255, .04);
+}
+.w-card { padding: var(--space-3) var(--space-4); }
+.w-card h2 { margin: 0 0 var(--space-2); font-size: 15px; color: var(--text); }
+
+.w-pitch-card { padding: var(--space-3); }
+.w-summary { font-size: 19px; font-weight: 700; padding: 2px 6px; }
+.w-banner { min-height: 20px; padding: 2px 6px 10px; color: var(--accent); font-size: 14px; }
+.w-banner.is-good { color: var(--good); }
+.w-banner.is-bad { color: var(--bad); }
+.w-banner.is-flat { color: var(--text-muted); }
+
+/* campo in prospettiva: lo SVG disegna erba e righe, i giocatori sono HTML sopra */
+.w-pitch {
+  position: relative; aspect-ratio: 1000 / 720; container-type: inline-size; overflow: hidden;
+  border-radius: 14px; border: 1px solid var(--border-strong);
+  background:
+    radial-gradient(ellipse at 50% 0%, #1c4b66 0%, transparent 55%),
+    linear-gradient(180deg, #071a26 0%, #0a2a3a 100%);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .45);
+}
+.w-pitch svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.w-token {
+  position: absolute; width: 0; height: 0; cursor: pointer;
+  transition: filter .15s;
+}
+.w-token-inner {
+  position: absolute; left: 0; top: 0; transform: translate(-50%, -50%) scale(var(--s, 1));
+  display: grid; justify-items: center; width: 15cqw;
+  transition: transform .15s;
+}
+.w-token:hover .w-token-inner { transform: translate(-50%, -54%) scale(calc(var(--s, 1) * 1.05)); }
+.w-token:hover { filter: drop-shadow(0 8px 12px rgba(0, 0, 0, .5)); }
+
+.w-avatar {
+  position: relative; width: 8cqw; height: 8cqw; border-radius: 50%;
+  display: grid; place-items: center; font-weight: 800; font-size: 2.7cqw; letter-spacing: -.01em;
+  border: .5cqw solid var(--ring-default); box-shadow: 0 .6cqw 1.2cqw rgba(0, 0, 0, .5), inset 0 -.8cqw 1.2cqw rgba(0, 0, 0, .18);
+}
+.w-token.is-selected .w-avatar { box-shadow: 0 0 0 .6cqw rgba(25, 227, 196, .35), 0 0 3cqw rgba(25, 227, 196, .6); border-color: var(--ring-selected); }
+
+.w-badge {
+  position: absolute; display: grid; place-items: center; font-size: 1.9cqw; font-weight: 800;
+  width: 3.1cqw; height: 3.1cqw; border-radius: 50%; border: .25cqw solid var(--bg);
+}
+.w-badge-role { left: -1cqw; top: -.6cqw; background: var(--bg); color: var(--text); }
+.w-badge-cap  { right: -1cqw; top: -.6cqw; background: var(--captain); color: var(--captain-text); }
+.w-badge-v { right: -.8cqw; bottom: -.6cqw; background: var(--verdict-v); color: #fff; }
+.w-badge-s { right: -.8cqw; bottom: -.6cqw; background: var(--verdict-s); color: #fff; }
+.w-badge-e { right: -.8cqw; bottom: -.6cqw; background: var(--verdict-e); color: #fff; }
+
+.w-name {
+  margin-top: .8cqw; padding: .5cqw 1.3cqw; min-width: 11cqw; text-align: center;
+  background: rgba(6, 18, 27, .78); border: 1px solid var(--border-strong); border-radius: 1.2cqw;
+  font-size: 2.1cqw; font-weight: 700; white-space: nowrap; line-height: 1.2;
+}
+.w-name small { display: block; font-size: 1.6cqw; font-weight: 500; color: var(--text-muted); }
+.w-delta {
+  margin-top: .5cqw; padding: .1cqw 1.2cqw; border-radius: 999px; font-size: 1.8cqw; font-weight: 700;
+  background: var(--surface); color: var(--text-muted);
+}
+.w-delta.is-good { color: var(--good); background: var(--good-bg); }
+.w-delta.is-bad { color: var(--bad); background: var(--bad-bg); }
+
+/* legenda (sempre visibile sotto il campo) */
+.w-legend { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin: var(--space-3) 0 0; padding: 0 6px; list-style: none; font-size: 12px; color: var(--text-muted); }
+.w-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.w-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; border: 2px solid transparent; }
+
+/* pannelli laterali */
+.w-detail h3 { margin: 0 0 4px; font-size: 16px; }
+.w-detail p { margin: 2px 0; color: var(--text); font-size: 13px; }
+.w-detail p:first-of-type { color: var(--text-muted); }
+.w-muted { color: var(--text-muted); }
+.w-compare p { margin: 0 0 6px; font-size: 13px; }
+.w-compare table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.w-compare td { padding: 3px 0; }
+.w-compare td:last-child { text-align: right; }
+.w-hint { color: var(--text-muted); font-size: 13px; }
+
+.good { color: var(--good); } .bad { color: var(--bad); } .flat { color: var(--text-muted); }
+
+/* schede */
+.w-tabs-card { padding: 0; overflow: hidden; }
+.w-tabs { display: flex; border-bottom: 1px solid var(--border); }
+.w-tabs button { flex: 1; padding: 11px 6px; background: none; border: 0; border-bottom: 2px solid transparent; cursor: pointer; color: var(--text-muted); font-weight: 600; transition: color .15s; }
+.w-tabs button:hover { color: var(--text); }
+.w-tabs button.is-active { color: var(--accent); border-bottom-color: var(--accent); background: var(--accent-soft); }
+.w-tab-body { max-height: 300px; overflow: auto; padding: var(--space-2) var(--space-3); }
+.w-actions { display: flex; gap: var(--space-2); padding: var(--space-3); border-top: 1px solid var(--border); }
+.w-actions .w-btn { flex: 1; padding: 10px 8px; font-size: 13px; }
+
+.w-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.w-table th { position: sticky; top: 0; text-align: right; padding: 7px 6px; font-size: 12px; color: var(--text-muted); background: var(--surface); }
+.w-table td { text-align: right; padding: 6px; border-top: 1px solid var(--border); }
+.w-table th:first-child, .w-table td:first-child { text-align: left; }
+.w-table tbody tr { cursor: pointer; transition: background .12s; }
+.w-table tbody tr:hover { background: var(--surface-2); }
+.w-table tr.is-selected { background: var(--accent-soft); }
+.w-table tr.row-up td { background: var(--good-bg); color: var(--good); }
+.w-table tr.row-down td { background: var(--bad-bg); color: var(--bad); }
+.w-table tr.row-mine td { background: var(--warn-bg); color: var(--warn); }
+
+.w-opp { display: grid; gap: 6px; margin-bottom: var(--space-2); }
+.w-opp select { padding: 8px 10px; background: var(--bg-elevated); color: var(--text); border: 1px solid var(--border-strong); border-radius: 10px; }
+
+/* barra di stato fissa in basso */
+.w-status {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; padding: 11px var(--space-5);
+  background: var(--bg-elevated); border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;
+}
+.w-busy {
+  position: fixed; inset: 0; z-index: 10; display: grid; place-content: center; justify-items: center; gap: 12px;
+  background: rgba(6, 18, 27, .6); backdrop-filter: blur(3px);
+}
+.w-busy[hidden] { display: none; }
+.w-busy span { width: 34px; height: 34px; border: 4px solid var(--border-strong); border-top-color: var(--accent); border-radius: 50%; animation: w-spin .8s linear infinite; }
+@keyframes w-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 1100px) {
+  .w-layout { grid-template-columns: 1fr; }
+  .w-app { padding: var(--space-3); }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation-duration: 2s !important; } }
+
+/* selettore giornata: campo unico con - e +, senza le frecce native del browser */
+.w-stepper {
+  display: flex; align-items: stretch; background: var(--bg-elevated);
+  border: 1px solid var(--border-strong); border-radius: 10px; overflow: hidden;
+  transition: border-color .15s, box-shadow .15s;
+}
+.w-stepper:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(25, 227, 196, .25); }
+.w-field .w-stepper input {
+  width: 48px; min-width: 0; padding: 9px 0; text-align: center; font-weight: 700;
+  background: transparent; border: 0; border-radius: 0; box-shadow: none;
+  -moz-appearance: textfield; appearance: textfield;
+}
+.w-stepper input::-webkit-outer-spin-button,
+.w-stepper input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.w-stepper button {
+  width: 34px; border: 0; background: transparent; color: var(--text-muted);
+  font-size: 18px; line-height: 1; cursor: pointer; transition: background .15s, color .15s;
+}
+.w-stepper button:hover { background: var(--surface-2); color: var(--accent); }
+
+/* colori dei ruoli (cambi e panchina) */
+:root { --role-p: #f5c518; --role-d: #3ddc84; --role-c: #3aa9ff; --role-a: #ff5a4f; }
+.w-opp-code { font-weight: 700; }
+.w-scale { width: 80px; height: 10px; border-radius: 999px; display: inline-block; }
+.w-table tr.role-P td:first-child { box-shadow: inset 3px 0 0 var(--role-p); }
+.w-table tr.role-D td:first-child { box-shadow: inset 3px 0 0 var(--role-d); }
+.w-table tr.role-C td:first-child { box-shadow: inset 3px 0 0 var(--role-c); }
+.w-table tr.role-A td:first-child { box-shadow: inset 3px 0 0 var(--role-a); }
+.w-table tr.role-P td:nth-child(2) { color: var(--role-p); font-weight: 700; }
+.w-table tr.role-D td:nth-child(2) { color: var(--role-d); font-weight: 700; }
+.w-table tr.role-C td:nth-child(2) { color: var(--role-c); font-weight: 700; }
+.w-table tr.role-A td:nth-child(2) { color: var(--role-a); font-weight: 700; }
+
+/* titolarità scritta sotto il nome */
+.w-tit {
+  margin-top: .6cqw; padding: .3cqw 1.6cqw; border-radius: 999px;
+  font-size: 1.5cqw; font-weight: 800; color: var(--text);
+  background: rgba(6, 18, 27, .9); border: 1px solid var(--border-strong);
+}
+.w-stand-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 8px 0; }
+.w-stand-role { width: 22px; height: 22px; margin-top: 12px; display: grid; place-items: center; border-radius: 50%; font-size: 12px; background: var(--bg-elevated); }
+.w-stand-row.role-P .w-stand-role { color: var(--role-p); } .w-stand-row.role-D .w-stand-role { color: var(--role-d); }
+.w-stand-row.role-C .w-stand-role { color: var(--role-c); } .w-stand-row.role-A .w-stand-role { color: var(--role-a); }
+
+.w-ghost { display: grid; justify-items: center; gap: 4px; width: 78px; cursor: pointer; opacity: .55; filter: grayscale(1); transition: opacity .15s, filter .15s; }
+.w-ghost-pts {
+  width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 13px; font-weight: 800; color: var(--text-muted);
+  background: var(--surface-2); border: 2px solid var(--border-strong);
+}
+.w-ghost-name { font-size: 11px; color: var(--text-muted); text-align: center; line-height: 1.15; max-width: 78px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.w-ghost:hover { opacity: .9; filter: none; }
+.w-ghost.is-selected { opacity: 1; filter: none; }
+.w-ghost.is-selected .w-ghost-pts { border-color: var(--accent); color: var(--accent); }

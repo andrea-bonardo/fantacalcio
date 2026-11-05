@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Leghe locali generate dall'utente
+data/lega_importata.json
+data/la_mia_lega.json

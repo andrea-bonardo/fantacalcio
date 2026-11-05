@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FantaLineup 26/27</title>
+  <link rel="stylesheet" href="/fantalineup.css">
+</head>
+<body>
+  <div class="w-app">
+    <header class="w-header">
+      <h1 class="w-brand">Fanta<span>Lineup</span> <small>26/27</small></h1>
+      <form class="w-toolbar" id="toolbar" autocomplete="off">
+        <label class="w-field">Lega
+          <select id="league"></select>
+        </label>
+        <label class="w-field">Squadra
+          <select id="team"></select>
+        </label>
+        <div class="w-field w-field-small">
+          <label for="matchday">Giornata</label>
+          <div class="w-stepper">
+            <button type="button" id="md-down" aria-label="Giornata precedente">&minus;</button>
+            <input id="matchday" type="number" min="1" max="38" inputmode="numeric">
+            <button type="button" id="md-up" aria-label="Giornata successiva">+</button>
+          </div>
+        </div>
+        <button class="w-btn w-btn-primary" id="calc" type="submit">Calcola</button>
+      </form>
+    </header>
+
+    <div class="w-warning" id="warning" hidden></div>
+
+    <nav class="w-formations" id="formations" aria-label="Moduli"></nav>
+
+    <main class="w-layout">
+      <section class="w-pitch-card">
+        <div class="w-summary" id="summary"></div>
+        <div class="w-banner" id="banner"></div>
+        <div class="w-pitch" id="pitch"></div>
+        <div class="w-stand" id="stand"></div>
+      </section>
+
+      <aside class="w-side">
+        <section class="w-card">
+          <h2>Giocatore</h2>
+          <div id="detail" class="w-detail"></div>
+        </section>
+        <section class="w-card">
+          <h2>Difesa e confronto con la consigliata</h2>
+          <div id="compare" class="w-compare"></div>
+        </section>
+        <section class="w-card w-tabs-card">
+          <div class="w-tabs" role="tablist" id="tabs">
+            <button role="tab" data-tab="bench" class="is-active">Panchina</button>
+            <button role="tab" data-tab="seriea">Serie A</button>
+            <button role="tab" data-tab="duel">Sfida</button>
+            <button role="tab" data-tab="schedule">Calendario lega</button>
+          </div>
+          <div id="tab-body" class="w-tab-body"></div>
+          <div class="w-actions" id="actions">
+            <button class="w-btn w-btn-ghost" id="reset" type="button" disabled>Ripristina consigliata</button>
+          </div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <footer class="w-status" id="status" role="status"></footer>
+  <div class="w-busy" id="busy" hidden><span></span><b id="busy-text">Calcolo...</b></div>
+  <script src="/app.js"></script>
+</body>
+</html>

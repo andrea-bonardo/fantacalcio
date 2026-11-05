@@ -1,0 +1,39 @@
+{
+  "min_difensori_modificatore": 4,
+  "modificatore_portiere": true,
+  "tabella_modificatore": [
+  [6.00, 6.24, 1.5],
+  [6.25, 6.49, 2.5],
+  [6.50, 6.74, 4.0],
+  [6.75, 6.99, 5.5],
+  [7.00, 99.00, 7.0]
+    ],
+  "voto_sostituto_modificatore": 5.5,
+  "bonus_gol": 3.0,
+  "bonus_assist": 1.0,
+  "bonus_rigore_parato": 3.0,
+  "bonus_porta_inviolata": 0.0,
+  "malus_ammonizione": -1.0,
+  "malus_espulsione": -1.0,
+  "malus_autogol": -3.0,
+  "malus_rigore_sbagliato": -3.0,
+  "malus_gol_subito": -1.0,
+  "gol_subito_solo_portiere": true,
+  "moduli": [
+    "3-4-3",
+    "3-5-2",
+    "4-3-3",
+    "4-4-2",
+    "4-5-1",
+    "5-3-2",
+    "5-4-1"
+  ],
+  "max_per_squadra_serie_a": 0,
+  "panchina": 15,
+  "rischio": 0.15,
+  "partite_shrink_voto": 4,
+  "partite_shrink_rate": 6,
+  "fattore_casa_attacco": 1.08,
+  "fattore_trasferta_attacco": 0.92,
+  "giornata": null
+}

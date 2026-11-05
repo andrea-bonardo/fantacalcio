@@ -1,0 +1,3711 @@
+{
+  "stagione": "2026-27",
+  "aggiornato": "2026-10-31",
+  "giornata_corrente": 10,
+  "fonte_classifica": "https://it.wikipedia.org/wiki/Serie_A_2026-2027",
+  "fonte_calendario": "https://it.wikipedia.org/wiki/Serie_A_2026-2027",
+  "squadre": [
+    {
+      "codice": "INT",
+      "nome": "Inter",
+      "slug": "inter",
+      "posizione": 1,
+      "punti": 25,
+      "giocate": 9,
+      "vittorie": 8,
+      "pareggi": 1,
+      "sconfitte": 0,
+      "gf": 25,
+      "gs": 10,
+      "dr": 15
+    },
+    {
+      "codice": "LAZ",
+      "nome": "Lazio",
+      "slug": "lazio",
+      "posizione": 1,
+      "punti": 25,
+      "giocate": 9,
+      "vittorie": 8,
+      "pareggi": 1,
+      "sconfitte": 0,
+      "gf": 22,
+      "gs": 7,
+      "dr": 15
+    },
+    {
+      "codice": "ROM",
+      "nome": "Roma",
+      "slug": "roma",
+      "posizione": 3,
+      "punti": 21,
+      "giocate": 9,
+      "vittorie": 6,
+      "pareggi": 3,
+      "sconfitte": 0,
+      "gf": 23,
+      "gs": 8,
+      "dr": 15
+    },
+    {
+      "codice": "COM",
+      "nome": "Como",
+      "slug": "como",
+      "posizione": 4,
+      "punti": 20,
+      "giocate": 9,
+      "vittorie": 6,
+      "pareggi": 2,
+      "sconfitte": 1,
+      "gf": 17,
+      "gs": 8,
+      "dr": 9
+    },
+    {
+      "codice": "MIL",
+      "nome": "Milan",
+      "slug": "milan",
+      "posizione": 5,
+      "punti": 18,
+      "giocate": 9,
+      "vittorie": 5,
+      "pareggi": 3,
+      "sconfitte": 1,
+      "gf": 18,
+      "gs": 11,
+      "dr": 7
+    },
+    {
+      "codice": "FRO",
+      "nome": "Frosinone",
+      "slug": "frosinone",
+      "posizione": 6,
+      "punti": 17,
+      "giocate": 9,
+      "vittorie": 5,
+      "pareggi": 2,
+      "sconfitte": 2,
+      "gf": 22,
+      "gs": 14,
+      "dr": 8
+    },
+    {
+      "codice": "NAP",
+      "nome": "Napoli",
+      "slug": "napoli",
+      "posizione": 7,
+      "punti": 14,
+      "giocate": 9,
+      "vittorie": 4,
+      "pareggi": 2,
+      "sconfitte": 3,
+      "gf": 17,
+      "gs": 11,
+      "dr": 6
+    },
+    {
+      "codice": "JUV",
+      "nome": "Juventus",
+      "slug": "juventus",
+      "posizione": 7,
+      "punti": 14,
+      "giocate": 9,
+      "vittorie": 4,
+      "pareggi": 2,
+      "sconfitte": 3,
+      "gf": 11,
+      "gs": 10,
+      "dr": 1
+    },
+    {
+      "codice": "TOR",
+      "nome": "Torino",
+      "slug": "torino",
+      "posizione": 9,
+      "punti": 13,
+      "giocate": 9,
+      "vittorie": 4,
+      "pareggi": 1,
+      "sconfitte": 4,
+      "gf": 14,
+      "gs": 14,
+      "dr": 0
+    },
+    {
+      "codice": "CAG",
+      "nome": "Cagliari",
+      "slug": "cagliari",
+      "posizione": 9,
+      "punti": 13,
+      "giocate": 9,
+      "vittorie": 4,
+      "pareggi": 1,
+      "sconfitte": 4,
+      "gf": 8,
+      "gs": 13,
+      "dr": -5
+    },
+    {
+      "codice": "BOL",
+      "nome": "Bologna",
+      "slug": "bologna",
+      "posizione": 11,
+      "punti": 11,
+      "giocate": 9,
+      "vittorie": 3,
+      "pareggi": 2,
+      "sconfitte": 4,
+      "gf": 12,
+      "gs": 12,
+      "dr": 0
+    },
+    {
+      "codice": "ATA",
+      "nome": "Atalanta",
+      "slug": "atalanta",
+      "posizione": 11,
+      "punti": 11,
+      "giocate": 9,
+      "vittorie": 3,
+      "pareggi": 2,
+      "sconfitte": 4,
+      "gf": 16,
+      "gs": 17,
+      "dr": -1
+    },
+    {
+      "codice": "GEN",
+      "nome": "Genoa",
+      "slug": "genoa",
+      "posizione": 13,
+      "punti": 10,
+      "giocate": 9,
+      "vittorie": 3,
+      "pareggi": 1,
+      "sconfitte": 5,
+      "gf": 8,
+      "gs": 13,
+      "dr": -5
+    },
+    {
+      "codice": "LEC",
+      "nome": "Lecce",
+      "slug": "lecce",
+      "posizione": 14,
+      "punti": 9,
+      "giocate": 9,
+      "vittorie": 3,
+      "pareggi": 0,
+      "sconfitte": 6,
+      "gf": 10,
+      "gs": 19,
+      "dr": -9
+    },
+    {
+      "codice": "SAS",
+      "nome": "Sassuolo",
+      "slug": "sassuolo",
+      "posizione": 15,
+      "punti": 8,
+      "giocate": 9,
+      "vittorie": 2,
+      "pareggi": 2,
+      "sconfitte": 5,
+      "gf": 14,
+      "gs": 22,
+      "dr": -8
+    },
+    {
+      "codice": "MON",
+      "nome": "Monza",
+      "slug": "monza",
+      "posizione": 16,
+      "punti": 7,
+      "giocate": 9,
+      "vittorie": 2,
+      "pareggi": 1,
+      "sconfitte": 6,
+      "gf": 16,
+      "gs": 22,
+      "dr": -6
+    },
+    {
+      "codice": "UDI",
+      "nome": "Udinese",
+      "slug": "udinese",
+      "posizione": 17,
+      "punti": 5,
+      "giocate": 9,
+      "vittorie": 1,
+      "pareggi": 2,
+      "sconfitte": 6,
+      "gf": 9,
+      "gs": 18,
+      "dr": -9
+    },
+    {
+      "codice": "FIO",
+      "nome": "Fiorentina",
+      "slug": "fiorentina",
+      "posizione": 17,
+      "punti": 5,
+      "giocate": 9,
+      "vittorie": 1,
+      "pareggi": 2,
+      "sconfitte": 6,
+      "gf": 11,
+      "gs": 21,
+      "dr": -10
+    },
+    {
+      "codice": "PAR",
+      "nome": "Parma",
+      "slug": "parma",
+      "posizione": 17,
+      "punti": 5,
+      "giocate": 9,
+      "vittorie": 1,
+      "pareggi": 2,
+      "sconfitte": 6,
+      "gf": 5,
+      "gs": 15,
+      "dr": -10
+    },
+    {
+      "codice": "VEN",
+      "nome": "Venezia",
+      "slug": "venezia",
+      "posizione": 20,
+      "punti": 3,
+      "giocate": 9,
+      "vittorie": 1,
+      "pareggi": 0,
+      "sconfitte": 8,
+      "gf": 6,
+      "gs": 19,
+      "dr": -13
+    }
+  ],
+  "partite": [
+    {
+      "giornata": 1,
+      "casa": "ATA",
+      "trasferta": "SAS",
+      "data": "2026-08-23",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 1,
+      "casa": "BOL",
+      "trasferta": "LAZ",
+      "data": "2026-08-24",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 1,
+      "casa": "FRO",
+      "trasferta": "JUV",
+      "data": "2026-08-23",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 1,
+      "casa": "GEN",
+      "trasferta": "NAP",
+      "data": "2026-08-22",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 1,
+      "casa": "INT",
+      "trasferta": "MON",
+      "data": "2026-08-22",
+      "ora": null,
+      "gol_casa": 4,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 1,
+      "casa": "PAR",
+      "trasferta": "CAG",
+      "data": "2026-08-22",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 1,
+      "casa": "ROM",
+      "trasferta": "FIO",
+      "data": "2026-08-24",
+      "ora": null,
+      "gol_casa": 4,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 1,
+      "casa": "TOR",
+      "trasferta": "MIL",
+      "data": "2026-08-23",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 1,
+      "casa": "UDI",
+      "trasferta": "COM",
+      "data": "2026-08-22",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 1,
+      "casa": "VEN",
+      "trasferta": "LEC",
+      "data": "2026-08-23",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 2,
+      "casa": "ATA",
+      "trasferta": "BOL",
+      "data": "2026-08-31",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 2,
+      "casa": "CAG",
+      "trasferta": "INT",
+      "data": "2026-08-30",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 2,
+      "casa": "FIO",
+      "trasferta": "FRO",
+      "data": "2026-08-29",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 2,
+      "casa": "JUV",
+      "trasferta": "PAR",
+      "data": "2026-08-29",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 2,
+      "casa": "LAZ",
+      "trasferta": "GEN",
+      "data": "2026-08-30",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 2,
+      "casa": "LEC",
+      "trasferta": "ROM",
+      "data": "2026-08-31",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 4
+    },
+    {
+      "giornata": 2,
+      "casa": "MIL",
+      "trasferta": "VEN",
+      "data": "2026-08-28",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 2,
+      "casa": "MON",
+      "trasferta": "UDI",
+      "data": "2026-08-29",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 2,
+      "casa": "NAP",
+      "trasferta": "COM",
+      "data": "2026-08-30",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 2,
+      "casa": "SAS",
+      "trasferta": "TOR",
+      "data": "2026-08-29",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 3,
+      "casa": "BOL",
+      "trasferta": "SAS",
+      "data": "2026-09-06",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 3,
+      "casa": "CAG",
+      "trasferta": "LEC",
+      "data": "2026-09-07",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 3,
+      "casa": "FIO",
+      "trasferta": "TOR",
+      "data": "2026-09-05",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 3,
+      "casa": "FRO",
+      "trasferta": "VEN",
+      "data": "2026-09-06",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 3,
+      "casa": "GEN",
+      "trasferta": "COM",
+      "data": "2026-09-04",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 4
+    },
+    {
+      "giornata": 3,
+      "casa": "INT",
+      "trasferta": "NAP",
+      "data": "2026-09-05",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 3,
+      "casa": "JUV",
+      "trasferta": "MIL",
+      "data": "2026-09-06",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 3,
+      "casa": "PAR",
+      "trasferta": "MON",
+      "data": "2026-09-06",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 3,
+      "casa": "ROM",
+      "trasferta": "ATA",
+      "data": "2026-09-05",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 3,
+      "casa": "UDI",
+      "trasferta": "LAZ",
+      "data": "2026-09-07",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 4,
+      "casa": "ATA",
+      "trasferta": "CAG",
+      "data": "2026-09-12",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 4,
+      "casa": "COM",
+      "trasferta": "PAR",
+      "data": "2026-09-14",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 4,
+      "casa": "GEN",
+      "trasferta": "FRO",
+      "data": "2026-09-12",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 4,
+      "casa": "INT",
+      "trasferta": "UDI",
+      "data": "2026-09-14",
+      "ora": null,
+      "gol_casa": 5,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 4,
+      "casa": "LAZ",
+      "trasferta": "MIL",
+      "data": "2026-09-12",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 4,
+      "casa": "LEC",
+      "trasferta": "MON",
+      "data": "2026-09-13",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 4,
+      "casa": "NAP",
+      "trasferta": "BOL",
+      "data": "2026-09-13",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 4,
+      "casa": "SAS",
+      "trasferta": "JUV",
+      "data": "2026-09-13",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 4,
+      "casa": "TOR",
+      "trasferta": "ROM",
+      "data": "2026-09-14",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 4,
+      "casa": "VEN",
+      "trasferta": "FIO",
+      "data": "2026-09-11",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 4
+    },
+    {
+      "giornata": 5,
+      "casa": "BOL",
+      "trasferta": "TOR",
+      "data": "2026-09-19",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 5,
+      "casa": "FIO",
+      "trasferta": "NAP",
+      "data": "2026-09-20",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 5,
+      "casa": "FRO",
+      "trasferta": "COM",
+      "data": "2026-09-20",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 5,
+      "casa": "JUV",
+      "trasferta": "ATA",
+      "data": "2026-09-20",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 5,
+      "casa": "MIL",
+      "trasferta": "LEC",
+      "data": "2026-09-20",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 5,
+      "casa": "MON",
+      "trasferta": "SAS",
+      "data": "2026-09-18",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 5,
+      "casa": "PAR",
+      "trasferta": "GEN",
+      "data": "2026-09-20",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 5,
+      "casa": "ROM",
+      "trasferta": "INT",
+      "data": "2026-09-19",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 5,
+      "casa": "UDI",
+      "trasferta": "CAG",
+      "data": "2026-09-19",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 5,
+      "casa": "VEN",
+      "trasferta": "LAZ",
+      "data": "2026-09-19",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 6,
+      "casa": "ATA",
+      "trasferta": "VEN",
+      "data": "2026-10-12",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 6,
+      "casa": "CAG",
+      "trasferta": "JUV",
+      "data": "2026-10-11",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 6,
+      "casa": "COM",
+      "trasferta": "ROM",
+      "data": "2026-10-11",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 6,
+      "casa": "GEN",
+      "trasferta": "FIO",
+      "data": "2026-10-10",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 6,
+      "casa": "INT",
+      "trasferta": "PAR",
+      "data": "2026-10-10",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 6,
+      "casa": "LAZ",
+      "trasferta": "MON",
+      "data": "2026-10-11",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 6,
+      "casa": "LEC",
+      "trasferta": "BOL",
+      "data": "2026-10-11",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 6,
+      "casa": "NAP",
+      "trasferta": "FRO",
+      "data": "2026-10-10",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 6,
+      "casa": "SAS",
+      "trasferta": "MIL",
+      "data": "2026-10-11",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 6,
+      "casa": "TOR",
+      "trasferta": "UDI",
+      "data": "2026-10-12",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 7,
+      "casa": "BOL",
+      "trasferta": "INT",
+      "data": "2026-10-17",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 7,
+      "casa": "FIO",
+      "trasferta": "COM",
+      "data": "2026-10-18",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 7,
+      "casa": "FRO",
+      "trasferta": "SAS",
+      "data": "2026-10-16",
+      "ora": null,
+      "gol_casa": 4,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 7,
+      "casa": "JUV",
+      "trasferta": "LAZ",
+      "data": "2026-10-18",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 7,
+      "casa": "MIL",
+      "trasferta": "ATA",
+      "data": "2026-10-18",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 7,
+      "casa": "MON",
+      "trasferta": "CAG",
+      "data": "2026-10-19",
+      "ora": null,
+      "gol_casa": 4,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 7,
+      "casa": "PAR",
+      "trasferta": "TOR",
+      "data": "2026-10-19",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 7,
+      "casa": "ROM",
+      "trasferta": "GEN",
+      "data": "2026-10-17",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 7,
+      "casa": "UDI",
+      "trasferta": "LEC",
+      "data": "2026-10-18",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 7,
+      "casa": "VEN",
+      "trasferta": "NAP",
+      "data": "2026-10-17",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 8,
+      "casa": "ATA",
+      "trasferta": "FRO",
+      "data": "2026-10-25",
+      "ora": null,
+      "gol_casa": 4,
+      "gol_trasferta": 4
+    },
+    {
+      "giornata": 8,
+      "casa": "CAG",
+      "trasferta": "BOL",
+      "data": "2026-10-24",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 8,
+      "casa": "COM",
+      "trasferta": "SAS",
+      "data": "2026-10-24",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 8,
+      "casa": "GEN",
+      "trasferta": "VEN",
+      "data": "2026-10-25",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 8,
+      "casa": "INT",
+      "trasferta": "FIO",
+      "data": "2026-10-25",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 8,
+      "casa": "LAZ",
+      "trasferta": "PAR",
+      "data": "2026-10-24",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 8,
+      "casa": "LEC",
+      "trasferta": "JUV",
+      "data": "2026-10-25",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 8,
+      "casa": "NAP",
+      "trasferta": "ROM",
+      "data": "2026-10-24",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 8,
+      "casa": "TOR",
+      "trasferta": "MON",
+      "data": "2026-10-23",
+      "ora": null,
+      "gol_casa": 3,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 8,
+      "casa": "UDI",
+      "trasferta": "MIL",
+      "data": "2026-10-25",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 9,
+      "casa": "FIO",
+      "trasferta": "ATA",
+      "data": "2026-10-29",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 9,
+      "casa": "FRO",
+      "trasferta": "LEC",
+      "data": "2026-10-29",
+      "ora": null,
+      "gol_casa": 5,
+      "gol_trasferta": 1
+    },
+    {
+      "giornata": 9,
+      "casa": "GEN",
+      "trasferta": "JUV",
+      "data": "2026-10-28",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 9,
+      "casa": "MIL",
+      "trasferta": "BOL",
+      "data": "2026-10-28",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 4
+    },
+    {
+      "giornata": 9,
+      "casa": "MON",
+      "trasferta": "NAP",
+      "data": "2026-10-28",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 4
+    },
+    {
+      "giornata": 9,
+      "casa": "PAR",
+      "trasferta": "UDI",
+      "data": "2026-10-28",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 0
+    },
+    {
+      "giornata": 9,
+      "casa": "ROM",
+      "trasferta": "CAG",
+      "data": "2026-10-27",
+      "ora": null,
+      "gol_casa": 4,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 9,
+      "casa": "SAS",
+      "trasferta": "LAZ",
+      "data": "2026-10-27",
+      "ora": null,
+      "gol_casa": 2,
+      "gol_trasferta": 6
+    },
+    {
+      "giornata": 9,
+      "casa": "TOR",
+      "trasferta": "COM",
+      "data": "2026-10-27",
+      "ora": null,
+      "gol_casa": 1,
+      "gol_trasferta": 3
+    },
+    {
+      "giornata": 9,
+      "casa": "VEN",
+      "trasferta": "INT",
+      "data": "2026-10-28",
+      "ora": null,
+      "gol_casa": 0,
+      "gol_trasferta": 2
+    },
+    {
+      "giornata": 10,
+      "casa": "ATA",
+      "trasferta": "PAR",
+      "data": "2026-11-02",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "BOL",
+      "trasferta": "MON",
+      "data": "2026-10-31",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "COM",
+      "trasferta": "VEN",
+      "data": "2026-10-31",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "FRO",
+      "trasferta": "TOR",
+      "data": "2026-10-31",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "JUV",
+      "trasferta": "NAP",
+      "data": "2026-10-31",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "LAZ",
+      "trasferta": "CAG",
+      "data": "2026-10-31",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "LEC",
+      "trasferta": "GEN",
+      "data": "2026-10-31",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "MIL",
+      "trasferta": "INT",
+      "data": "2026-10-31",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "SAS",
+      "trasferta": "FIO",
+      "data": "2026-11-02",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 10,
+      "casa": "UDI",
+      "trasferta": "ROM",
+      "data": "2026-10-31",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "CAG",
+      "trasferta": "FRO",
+      "data": "2026-11-07",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "FIO",
+      "trasferta": "JUV",
+      "data": "2026-11-08",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "GEN",
+      "trasferta": "MIL",
+      "data": "2026-11-08",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "INT",
+      "trasferta": "COM",
+      "data": "2026-11-08",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "MON",
+      "trasferta": "ATA",
+      "data": "2026-11-08",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "NAP",
+      "trasferta": "LAZ",
+      "data": "2026-11-08",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "PAR",
+      "trasferta": "BOL",
+      "data": "2026-11-07",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "ROM",
+      "trasferta": "SAS",
+      "data": "2026-11-07",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "TOR",
+      "trasferta": "LEC",
+      "data": "2026-11-07",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 11,
+      "casa": "VEN",
+      "trasferta": "UDI",
+      "data": "2026-11-06",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "ATA",
+      "trasferta": "INT",
+      "data": "2026-11-22",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "BOL",
+      "trasferta": "UDI",
+      "data": "2026-11-22",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "COM",
+      "trasferta": "CAG",
+      "data": "2026-11-21",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "JUV",
+      "trasferta": "VEN",
+      "data": "2026-11-22",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "LAZ",
+      "trasferta": "LEC",
+      "data": "2026-11-21",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "MIL",
+      "trasferta": "FRO",
+      "data": "2026-11-22",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "MON",
+      "trasferta": "FIO",
+      "data": "2026-11-23",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "NAP",
+      "trasferta": "TOR",
+      "data": "2026-11-21",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "PAR",
+      "trasferta": "ROM",
+      "data": "2026-11-21",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 12,
+      "casa": "SAS",
+      "trasferta": "GEN",
+      "data": "2026-11-22",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "CAG",
+      "trasferta": "MIL",
+      "data": "2026-11-30",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "COM",
+      "trasferta": "JUV",
+      "data": "2026-11-29",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "FRO",
+      "trasferta": "PAR",
+      "data": "2026-11-28",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "INT",
+      "trasferta": "GEN",
+      "data": "2026-11-28",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "LEC",
+      "trasferta": "ATA",
+      "data": "2026-11-30",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "ROM",
+      "trasferta": "MON",
+      "data": "2026-11-29",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "SAS",
+      "trasferta": "NAP",
+      "data": "2026-11-29",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "TOR",
+      "trasferta": "LAZ",
+      "data": "2026-11-28",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "UDI",
+      "trasferta": "FIO",
+      "data": "2026-11-29",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 13,
+      "casa": "VEN",
+      "trasferta": "BOL",
+      "data": "2026-11-27",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "BOL",
+      "trasferta": "ROM",
+      "data": "2026-12-04",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "FIO",
+      "trasferta": "CAG",
+      "data": "2026-12-07",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "FRO",
+      "trasferta": "INT",
+      "data": "2026-12-05",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "GEN",
+      "trasferta": "TOR",
+      "data": "2026-12-06",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "JUV",
+      "trasferta": "UDI",
+      "data": "2026-12-06",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "LAZ",
+      "trasferta": "ATA",
+      "data": "2026-12-06",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "MIL",
+      "trasferta": "PAR",
+      "data": "2026-12-06",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "MON",
+      "trasferta": "COM",
+      "data": "2026-12-05",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "NAP",
+      "trasferta": "LEC",
+      "data": "2026-12-05",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 14,
+      "casa": "VEN",
+      "trasferta": "SAS",
+      "data": "2026-12-07",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "ATA",
+      "trasferta": "GEN",
+      "data": "2026-12-14",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "CAG",
+      "trasferta": "VEN",
+      "data": "2026-12-12",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "COM",
+      "trasferta": "BOL",
+      "data": "2026-12-12",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "INT",
+      "trasferta": "TOR",
+      "data": "2026-12-13",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "JUV",
+      "trasferta": "MON",
+      "data": "2026-12-14",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "LAZ",
+      "trasferta": "ROM",
+      "data": "2026-12-13",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "LEC",
+      "trasferta": "SAS",
+      "data": "2026-12-12",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "NAP",
+      "trasferta": "MIL",
+      "data": "2026-12-13",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "PAR",
+      "trasferta": "FIO",
+      "data": "2026-12-13",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 15,
+      "casa": "UDI",
+      "trasferta": "FRO",
+      "data": "2026-12-11",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "ATA",
+      "trasferta": "NAP",
+      "data": "2026-12-20",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "FIO",
+      "trasferta": "BOL",
+      "data": "2026-12-20",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "FRO",
+      "trasferta": "LAZ",
+      "data": "2026-12-18",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "GEN",
+      "trasferta": "UDI",
+      "data": "2026-12-20",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "LEC",
+      "trasferta": "INT",
+      "data": "2026-12-18",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "MIL",
+      "trasferta": "COM",
+      "data": "2026-12-19",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "ROM",
+      "trasferta": "JUV",
+      "data": "2026-12-19",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "SAS",
+      "trasferta": "PAR",
+      "data": "2026-12-19",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "TOR",
+      "trasferta": "CAG",
+      "data": "2026-12-20",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 16,
+      "casa": "VEN",
+      "trasferta": "MON",
+      "data": "2026-12-20",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "BOL",
+      "trasferta": "JUV",
+      "data": "2027-01-03",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "CAG",
+      "trasferta": "GEN",
+      "data": "2027-01-02",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "COM",
+      "trasferta": "LEC",
+      "data": "2027-01-03",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "FIO",
+      "trasferta": "LAZ",
+      "data": "2027-01-02",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "INT",
+      "trasferta": "SAS",
+      "data": "2027-01-03",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "MON",
+      "trasferta": "MIL",
+      "data": "2027-01-02",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "PAR",
+      "trasferta": "NAP",
+      "data": "2027-01-03",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "ROM",
+      "trasferta": "FRO",
+      "data": "2027-01-02",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "TOR",
+      "trasferta": "VEN",
+      "data": "2027-01-02",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 17,
+      "casa": "UDI",
+      "trasferta": "ATA",
+      "data": "2027-01-03",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "ATA",
+      "trasferta": "COM",
+      "data": "2027-01-06",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "FRO",
+      "trasferta": "BOL",
+      "data": "2027-01-06",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "GEN",
+      "trasferta": "MON",
+      "data": "2027-01-05",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "JUV",
+      "trasferta": "TOR",
+      "data": "2027-01-06",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "LAZ",
+      "trasferta": "INT",
+      "data": "2027-01-06",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "LEC",
+      "trasferta": "PAR",
+      "data": "2027-01-06",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "MIL",
+      "trasferta": "FIO",
+      "data": "2027-01-05",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "NAP",
+      "trasferta": "CAG",
+      "data": "2027-01-07",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "SAS",
+      "trasferta": "UDI",
+      "data": "2027-01-07",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 18,
+      "casa": "VEN",
+      "trasferta": "ROM",
+      "data": "2027-01-05",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "BOL",
+      "trasferta": "GEN",
+      "data": "2027-01-09",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "CAG",
+      "trasferta": "SAS",
+      "data": "2027-01-11",
+      "ora": "18:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "COM",
+      "trasferta": "LAZ",
+      "data": "2027-01-10",
+      "ora": "12:30",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "FIO",
+      "trasferta": "LEC",
+      "data": "2027-01-10",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "INT",
+      "trasferta": "JUV",
+      "data": "2027-01-10",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "MON",
+      "trasferta": "FRO",
+      "data": "2027-01-09",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "PAR",
+      "trasferta": "VEN",
+      "data": "2027-01-10",
+      "ora": "15:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "ROM",
+      "trasferta": "MIL",
+      "data": "2027-01-09",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "TOR",
+      "trasferta": "ATA",
+      "data": "2027-01-10",
+      "ora": "18:00",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 19,
+      "casa": "UDI",
+      "trasferta": "NAP",
+      "data": "2027-01-11",
+      "ora": "20:45",
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "ATA",
+      "trasferta": "ROM",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "CAG",
+      "trasferta": "COM",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "JUV",
+      "trasferta": "GEN",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "LAZ",
+      "trasferta": "BOL",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "LEC",
+      "trasferta": "UDI",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "MIL",
+      "trasferta": "TOR",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "NAP",
+      "trasferta": "FIO",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "PAR",
+      "trasferta": "INT",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "SAS",
+      "trasferta": "MON",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 20,
+      "casa": "VEN",
+      "trasferta": "FRO",
+      "data": "2027-01-17",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "BOL",
+      "trasferta": "ATA",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "COM",
+      "trasferta": "NAP",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "FIO",
+      "trasferta": "SAS",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "FRO",
+      "trasferta": "MIL",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "GEN",
+      "trasferta": "PAR",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "INT",
+      "trasferta": "VEN",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "JUV",
+      "trasferta": "CAG",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "LEC",
+      "trasferta": "TOR",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "MON",
+      "trasferta": "LAZ",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 21,
+      "casa": "ROM",
+      "trasferta": "UDI",
+      "data": "2027-01-24",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "ATA",
+      "trasferta": "FIO",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "CAG",
+      "trasferta": "PAR",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "GEN",
+      "trasferta": "LEC",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "LAZ",
+      "trasferta": "VEN",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "MIL",
+      "trasferta": "JUV",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "MON",
+      "trasferta": "ROM",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "NAP",
+      "trasferta": "INT",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "SAS",
+      "trasferta": "COM",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "TOR",
+      "trasferta": "FRO",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 22,
+      "casa": "UDI",
+      "trasferta": "BOL",
+      "data": "2027-01-31",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "ATA",
+      "trasferta": "LAZ",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "BOL",
+      "trasferta": "MIL",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "COM",
+      "trasferta": "MON",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "FIO",
+      "trasferta": "UDI",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "INT",
+      "trasferta": "CAG",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "JUV",
+      "trasferta": "SAS",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "LEC",
+      "trasferta": "NAP",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "PAR",
+      "trasferta": "FRO",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "ROM",
+      "trasferta": "TOR",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 23,
+      "casa": "VEN",
+      "trasferta": "GEN",
+      "data": "2027-02-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "BOL",
+      "trasferta": "COM",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "CAG",
+      "trasferta": "LAZ",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "FRO",
+      "trasferta": "FIO",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "GEN",
+      "trasferta": "ATA",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "INT",
+      "trasferta": "MIL",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "MON",
+      "trasferta": "LEC",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "NAP",
+      "trasferta": "JUV",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "ROM",
+      "trasferta": "PAR",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "TOR",
+      "trasferta": "SAS",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 24,
+      "casa": "UDI",
+      "trasferta": "VEN",
+      "data": "2027-02-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "ATA",
+      "trasferta": "MON",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "COM",
+      "trasferta": "TOR",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "FIO",
+      "trasferta": "INT",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "JUV",
+      "trasferta": "BOL",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "LAZ",
+      "trasferta": "NAP",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "LEC",
+      "trasferta": "FRO",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "MIL",
+      "trasferta": "GEN",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "SAS",
+      "trasferta": "ROM",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "UDI",
+      "trasferta": "PAR",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 25,
+      "casa": "VEN",
+      "trasferta": "CAG",
+      "data": "2027-02-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "BOL",
+      "trasferta": "LEC",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "CAG",
+      "trasferta": "UDI",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "COM",
+      "trasferta": "MIL",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "FRO",
+      "trasferta": "NAP",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "GEN",
+      "trasferta": "LAZ",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "INT",
+      "trasferta": "ATA",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "MON",
+      "trasferta": "JUV",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "PAR",
+      "trasferta": "SAS",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "ROM",
+      "trasferta": "VEN",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 26,
+      "casa": "TOR",
+      "trasferta": "FIO",
+      "data": "2027-02-28",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "ATA",
+      "trasferta": "TOR",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "FIO",
+      "trasferta": "VEN",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "JUV",
+      "trasferta": "ROM",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "LAZ",
+      "trasferta": "FRO",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "LEC",
+      "trasferta": "COM",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "MIL",
+      "trasferta": "CAG",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "MON",
+      "trasferta": "GEN",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "NAP",
+      "trasferta": "PAR",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "SAS",
+      "trasferta": "BOL",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 27,
+      "casa": "UDI",
+      "trasferta": "INT",
+      "data": "2027-03-07",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "BOL",
+      "trasferta": "NAP",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "CAG",
+      "trasferta": "FIO",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "COM",
+      "trasferta": "UDI",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "FRO",
+      "trasferta": "MON",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "GEN",
+      "trasferta": "ROM",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "LAZ",
+      "trasferta": "JUV",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "MIL",
+      "trasferta": "SAS",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "PAR",
+      "trasferta": "LEC",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "TOR",
+      "trasferta": "INT",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 28,
+      "casa": "VEN",
+      "trasferta": "ATA",
+      "data": "2027-03-14",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "ATA",
+      "trasferta": "MIL",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "FIO",
+      "trasferta": "GEN",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "INT",
+      "trasferta": "FRO",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "JUV",
+      "trasferta": "COM",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "MON",
+      "trasferta": "BOL",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "NAP",
+      "trasferta": "VEN",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "PAR",
+      "trasferta": "LAZ",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "ROM",
+      "trasferta": "LEC",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "SAS",
+      "trasferta": "CAG",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 29,
+      "casa": "UDI",
+      "trasferta": "TOR",
+      "data": "2027-03-21",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "CAG",
+      "trasferta": "NAP",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "COM",
+      "trasferta": "FIO",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "FRO",
+      "trasferta": "UDI",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "GEN",
+      "trasferta": "INT",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "LEC",
+      "trasferta": "LAZ",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "MIL",
+      "trasferta": "MON",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "ROM",
+      "trasferta": "BOL",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "SAS",
+      "trasferta": "ATA",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "TOR",
+      "trasferta": "JUV",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 30,
+      "casa": "VEN",
+      "trasferta": "PAR",
+      "data": "2027-04-04",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "BOL",
+      "trasferta": "VEN",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "CAG",
+      "trasferta": "ATA",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "FIO",
+      "trasferta": "MIL",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "FRO",
+      "trasferta": "GEN",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "INT",
+      "trasferta": "ROM",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "JUV",
+      "trasferta": "LEC",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "LAZ",
+      "trasferta": "TOR",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "NAP",
+      "trasferta": "SAS",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "PAR",
+      "trasferta": "COM",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 31,
+      "casa": "UDI",
+      "trasferta": "MON",
+      "data": "2027-04-11",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "ATA",
+      "trasferta": "UDI",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "BOL",
+      "trasferta": "CAG",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "COM",
+      "trasferta": "FRO",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "FIO",
+      "trasferta": "PAR",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "MIL",
+      "trasferta": "NAP",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "MON",
+      "trasferta": "INT",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "ROM",
+      "trasferta": "LAZ",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "SAS",
+      "trasferta": "LEC",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "TOR",
+      "trasferta": "GEN",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 32,
+      "casa": "VEN",
+      "trasferta": "JUV",
+      "data": "2027-04-18",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "CAG",
+      "trasferta": "MON",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "FRO",
+      "trasferta": "ROM",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "GEN",
+      "trasferta": "SAS",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "INT",
+      "trasferta": "BOL",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "JUV",
+      "trasferta": "FIO",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "LAZ",
+      "trasferta": "COM",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "LEC",
+      "trasferta": "MIL",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "NAP",
+      "trasferta": "UDI",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "PAR",
+      "trasferta": "ATA",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 33,
+      "casa": "VEN",
+      "trasferta": "TOR",
+      "data": "2027-04-25",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "ATA",
+      "trasferta": "JUV",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "BOL",
+      "trasferta": "FIO",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "COM",
+      "trasferta": "INT",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "LEC",
+      "trasferta": "CAG",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "MIL",
+      "trasferta": "LAZ",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "MON",
+      "trasferta": "VEN",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "ROM",
+      "trasferta": "NAP",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "SAS",
+      "trasferta": "FRO",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "TOR",
+      "trasferta": "PAR",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 34,
+      "casa": "UDI",
+      "trasferta": "GEN",
+      "data": "2027-05-02",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "FIO",
+      "trasferta": "ROM",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "FRO",
+      "trasferta": "ATA",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "GEN",
+      "trasferta": "CAG",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "INT",
+      "trasferta": "LEC",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "LAZ",
+      "trasferta": "SAS",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "NAP",
+      "trasferta": "MON",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "PAR",
+      "trasferta": "MIL",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "TOR",
+      "trasferta": "BOL",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "UDI",
+      "trasferta": "JUV",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 35,
+      "casa": "VEN",
+      "trasferta": "COM",
+      "data": "2027-05-09",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "BOL",
+      "trasferta": "FRO",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "CAG",
+      "trasferta": "TOR",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "COM",
+      "trasferta": "ATA",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "JUV",
+      "trasferta": "INT",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "LAZ",
+      "trasferta": "UDI",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "LEC",
+      "trasferta": "FIO",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "MIL",
+      "trasferta": "ROM",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "MON",
+      "trasferta": "PAR",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "NAP",
+      "trasferta": "GEN",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 36,
+      "casa": "SAS",
+      "trasferta": "VEN",
+      "data": "2027-05-16",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "ATA",
+      "trasferta": "LEC",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "FIO",
+      "trasferta": "MON",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "FRO",
+      "trasferta": "CAG",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "GEN",
+      "trasferta": "BOL",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "INT",
+      "trasferta": "LAZ",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "PAR",
+      "trasferta": "JUV",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "ROM",
+      "trasferta": "COM",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "TOR",
+      "trasferta": "NAP",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "UDI",
+      "trasferta": "SAS",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 37,
+      "casa": "VEN",
+      "trasferta": "MIL",
+      "data": "2027-05-23",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "BOL",
+      "trasferta": "PAR",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "CAG",
+      "trasferta": "ROM",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "COM",
+      "trasferta": "GEN",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "JUV",
+      "trasferta": "FRO",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "LAZ",
+      "trasferta": "FIO",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "LEC",
+      "trasferta": "VEN",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "MIL",
+      "trasferta": "UDI",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "MON",
+      "trasferta": "TOR",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "NAP",
+      "trasferta": "ATA",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    },
+    {
+      "giornata": 38,
+      "casa": "SAS",
+      "trasferta": "INT",
+      "data": "2027-05-30",
+      "ora": null,
+      "gol_casa": null,
+      "gol_trasferta": null
+    }
+  ]
+}
